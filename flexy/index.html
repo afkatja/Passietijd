@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Flexbox bedenktijdje</title>
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet'>
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<link href="../stylesheets/screen.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/modernizr.custom.2.6.2.js"></script>
+</head>
+<body data-duration="10">
+
+<section>
+  <header id="intro" class="slide">
+  	<h1>Flexbox FTW</h1>
+  	<object data="Q42-logo.svg" width="180px" type="image/svg+xml">
+  		<!--<img src="Q42-logo.png" alt="Q42" />-->
+  	</object>
+  </header>
+</section>
+<section>
+	<header class="slide">
+		<h1>Introduction</h1>
+	</header>
+	
+	<section class="slide" title="Waarom Flexbox?">
+		<h2>Het probleem</h2>
+		<ul>
+      <li class="delayed plain">
+        <figure class="hbox v-center"><img src="http://i.stack.imgur.com/yTzXI.jpg" /><figcapture>Equal columns layout (of Holy Grail Layout)</figcapture></figure>
+      </li>
+			<li class="delayed plain">
+        <figure class="hbox v-center"><img src="http://kb.richd.nl/wp-content/uploads/2011/11/css-sticky-footer-keep-your-footer-at-the-bottom-of-the-page.jpg" /><figcapture>Sticky footer waar content de verticale ruimte opvult</figcapture></figure>
+      </li>
+			<li class="delayed plain">
+        <figure class="hbox v-center"><img src="http://www.fklein.info/wp-content/uploads/2013/02/square-news-listing.gif" /><figcapture>Verticaal gecentreerde content (met meerdere regels)</figcapture></figure>
+      </li>
+			<li class="delayed plain">
+        <figure class="hbox v-center"><img src="img/input-addon.png" /><figcapture>Fluid inputs met vaste elementen</figcapture></figure>
+      </li>
+			<li class="delayed plain">
+        <figure class="hbox v-center"><img src="http://www.stubbornella.org/content/wp-content/uploads/2010/06/5mediaBlocks.png" /><figcapture>Afbeelding met tekst die netjes naast de tekst blijft staan (media objects)</figcapture></figure>
+      </li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+    <h2>Equal rows layout</h2>
+    <textarea name="snippet" id="snippet" cols="30" rows="10" data-subject=".hbox"></textarea>
+    <article class="hbox">
+      <section class="flex box test">Box 1</section>
+      <section class="flex box test">Box 2</section>
+      <section class="flex box test">Box 3</section>
+    </article>
+  </section>
+  
+  <section class="slide">
+    <h2>Equal columns layout</h2>
+    <article class="vbox">
+      <section class="flex box test">Box 1</section>
+      <section class="flex box test">Box 2</section>
+      <section class="flex box test">Box 3</section>
+    </article>
+  </section>
+  
+  <section class="slide">
+    <h2>Real life example test</h2>
+    <div class="hbox">
+      <nav class="filters">
+        <ul>
+          <li><a href="#" class="block box">Test link 1</a></li>
+          <li><a href="#" class="block box">Test link 2</a></li>
+          <li><a href="#" class="block box">Test link 3</a></li>
+          <li><a href="#" class="block box">Test link 4</a></li>
+        </ul>
+      </nav>
+      <section class="products">
+        <div class="group hbox">
+          <div class="product box">Product 1</div>
+          <div class="product box">Product 2</div>
+          <div class="product box">Product 3</div>
+          <div class="product box">Product 4</div>
+        </div>
+      </section>
+    </div>
+	</section>
+	
+	<section class="slide">
+		<h2>Browser support</h2>
+		<ul>
+			<li class="delayed">Show, don't tell</li>
+			<li class="delayed">Follow the flow (bijvoorbeeld, timelines, play/pause)</li>
+			<li class="delayed">See the state (wat gebeurt op dat punt)</li>
+			<li class="delayed">Create by reacting</li>
+		</ul>
+	</section>
+</section>
+
+<section>	
+	<section class="slide">
+		<h2>Gebruik het nu</h2>
+		<ul>
+		  <li>Modernizr</li>
+		  <li class="delayed">Door immediate connection krijg het publiek veel meer grip op je code</li>
+		  <li class="delayed">Highlight een stuk code en maak het mogelijk het te wijzigen en meteen de wijzigingen zien</li>
+		  <li class="delayed">Moet als een extentie werken op Dev Tools, meer nadruk op code en wat het doet</li>
+		</ul>
+		<p class="delayed">Klinkt als veel, he?</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Ja, maar</h2>
+		<ul>
+			<li>Code Pen en andere omgevingen (eg <a href="http://livecoding.io/">live coding io</a>) bestaan al!</li>
+			<li class="delayed">Je zou zo veel opnieuw moeten opzetten!</li>
+			<li class="delayed">Je kan geen backend code instantaan laten zien!</li>
+			<li class="delayed">...</li>
+		</ul>
+		<p class="delayed">Nou, waarom gebruiken we die bestaande tools niet voor bedenktijdjes?</p> 
+		<p class="delayed">Het idee is een laag bovenop te creeren, net als Dev Tools, zodat we geen nieuwe opzet hoeven te maken</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Scope</h2>
+		<ul>
+		  <li>Een prototype voor het testen van een feature</li>
+		  <li class="delayed">Bijvoorbeeld css3 animations en transitions</li>
+		  <li class="delayed">Niet voor backend, nee</li>
+		  <li class="delayed">Omdat het debuggen van css3 animations in dev tools onmogelijk is</li>
+		  <li class="delayed">Het liefst geintegreerd met dev tools (nader onderzoek nodig)</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+	  <h2>Haalbaar?</h2>
+	  <ul>
+	    <li>Javascript opzet van editing omgeving</li>
+	    <li>Keuze voor platform</li>
+	    <li>Het wordt een prototype!</li>
+	    <li>We gaan (nog) niet integreren met Dev Tools</li>
+	  </ul>
+	</section>
+	
+	<section class="slide">
+	  <h2>Vet?</h2>
+	  <ul>
+	    <li>Niet alleen voor bedenktijdjes, maar ook voor product demo's!</li>
+	    <li>Een eigen Q product</li>
+	  </ul>
+	</section>
+	
+	<section class="slide">
+		<h2>De toekomst</h2>
+		<ul>
+			<li>Een Chrome Extension</li>
+			<li class="delayed">Mogelijk bestaande code (binnen een bestaand project) te testen</li>
+			<li class="delayed">Integreren met source maps voor het eventueel opslaan van de wijzigingen</li>
+			<li class="delayed">...</li>
+		</ul>
+	</section>
+	
+</section>
+<footer class="slide" title="The End">
+	<h2>Credits</h2>
+	<ul>
+		<li>CSS presentation tool van Lea Verou</li>
+		<li>Achtergrond van <a href="http://www.flickr.com/photos/dudutorres/">Dudu Torres</a> op Flickr</li>
+		<li><a href="http://philipwalton.github.io/solved-by-flexbox/">List of problems solved by Flexbox</a> door Philip Walton</li>
+	</ul>
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>

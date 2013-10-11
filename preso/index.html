@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Live coding tool voorstel</title>
+	
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+</head>
+<body data-duration="10">
+
+<section>
+  <style scoped>
+    #karaoke { background: url(http://www.clocksandcloudsmusic.com/wp-content/uploads/sheet_music.jpg) 0 0 no-repeat; background-size: cover; }
+  </style>
+  <header id="idee-1" class="slide" title="Audio API karaoke app">
+    <h1>Karaoke app voor muziekspeler</h1>
+    <h2>HTML5 Audio API FTW</h2>
+  </header>
+  <section class="slide" id="karaoke">
+    <h2>Een web app voor het spelen van bladmuziek</h2>
+    <ul>
+      <li>Op iPad, bladmuziek laat zien waar in het stuk je aan het spelen bent</li>
+      <li>Mbv Audio API</li>
+      <li>Ja, er zou een lag zijn, maar daar houden we rekening mee</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <header id="intro" class="slide">
+  	<h1>Live coding tool voor presentaties</h1>
+  	<object data="Q42-logo.svg" width="180px" type="image/svg+xml">
+  		<!--<img src="Q42-logo.png" alt="Q42" />-->
+  	</object>
+  </header>
+</section>
+<section>
+	<header class="slide">
+		<h1>Introduction</h1>
+	</header>
+	
+	<section class="slide" title="Live coding: Introduction">
+		<h2>Het probleem</h2>
+		<ul>
+      <li class="delayed">Om te laten zien hoe mijn code werkt moet ik switchen van de omgeving</li>
+			<li class="delayed">Sublime Text whatever -> Browser (misschien zelfs met page refresh)</li>
+			<li class="delayed">Terug naar Sublime Text whatever</li>
+			<li class="delayed">Wat doet bepaalde stuk code?</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>Inspiratie</h2>
+		<ul>
+			<li class="delayed">Bret Vicor met zijn <a href="https://vimeo.com/36579366">Inventing on Principle talk</a> en <a href="http://http://worrydream.com//LearnableProgramming/">Lernable Programming essay</a></li>
+			<li class="delayed"><a href="http://lea.verou.me/humble-border-radius/#slide9">De presentatie van Lea Verou</a> tijdens CSS Day afgelopen juni in Amsterdam</li>
+		</ul>
+		<blockquote cite="http://worrydream.com//LearnableProgramming/">Immediate-update is merely a prerequisite for doing anything interesting</blockquote>
+		<a rel="author" href="http://worrydream.com//LearnableProgramming/">Bret Victor</author>
+	</section>
+	
+	<section class="slide">
+		<h2>Hoe zou het moeten</h2>
+		<p>De principes (de meeste uit Inventing on Principle en Learnable Programming)</p>
+		<ul>
+			<li class="delayed">Show, don't tell</li>
+			<li class="delayed">Follow the flow (bijvoorbeeld, timelines, play/pause)</li>
+			<li class="delayed">See the state (wat gebeurt op dat punt)</li>
+			<li class="delayed">Create by reacting</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Concrete oplossing</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>De tool</h2>
+		<ul>
+		  <li>Code zou visueel inzichtelijk gemaakt worden (ga uit van iemand die jouw code niet kent)</li>
+		  <li class="delayed">Door immediate connection krijg het publiek veel meer grip op je code</li>
+		  <li class="delayed">Highlight een stuk code en maak het mogelijk het te wijzigen en meteen de wijzigingen zien</li>
+		  <li class="delayed">Moet als een extentie werken op Dev Tools, meer nadruk op code en wat het doet</li>
+		</ul>
+		<p class="delayed">Klinkt als veel, he?</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Ja, maar</h2>
+		<ul>
+			<li>Code Pen en andere omgevingen (eg <a href="http://livecoding.io/">live coding io</a>) bestaan al!</li>
+			<li class="delayed">Je zou zo veel opnieuw moeten opzetten!</li>
+			<li class="delayed">Je kan geen backend code instantaan laten zien!</li>
+			<li class="delayed">...</li>
+		</ul>
+		<p class="delayed">Nou, waarom gebruiken we die bestaande tools niet voor bedenktijdjes?</p> 
+		<p class="delayed">Het idee is een laag bovenop te creeren, net als Dev Tools, zodat we geen nieuwe opzet hoeven te maken</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Scope</h2>
+		<ul>
+		  <li>Een prototype voor het testen van een feature</li>
+		  <li class="delayed">Bijvoorbeeld css3 animations en transitions</li>
+		  <li class="delayed">Niet voor backend, nee</li>
+		  <li class="delayed">Omdat het debuggen van css3 animations in dev tools onmogelijk is</li>
+		  <li class="delayed">Het liefst geintegreerd met dev tools (nader onderzoek nodig)</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+	  <h2>Haalbaar?</h2>
+	  <ul>
+	    <li>Javascript opzet van editing omgeving</li>
+	    <li>Keuze voor platform</li>
+	    <li>Het wordt een prototype!</li>
+	    <li>We gaan (nog) niet integreren met Dev Tools</li>
+	  </ul>
+	</section>
+	
+	<section class="slide">
+	  <h2>Vet?</h2>
+	  <ul>
+	    <li>Niet alleen voor bedenktijdjes, maar ook voor product demo's!</li>
+	    <li>Een eigen Q product</li>
+	  </ul>
+	</section>
+	
+	<section class="slide">
+		<h2>De toekomst</h2>
+		<ul>
+			<li>Een Chrome Extension</li>
+			<li class="delayed">Mogelijk bestaande code (binnen een bestaand project) te testen</li>
+			<li class="delayed">Integreren met source maps voor het eventueel opslaan van de wijzigingen</li>
+			<li class="delayed">...</li>
+		</ul>
+	</section>
+	
+</section>
+<footer class="slide" title="The End">
+	<h2>Stem en JOIN!</h2>
+	<ul>
+		<li>CSS presentaion tool van Lea Verou</li>
+	</ul>
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>

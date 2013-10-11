@@ -1,0 +1,38 @@
+@import "globals";
+@import "flexbox";
+
+body {  margin: 0; padding: 0; font: 1em/1.5em 'Comfortaa', Helvetica, Arial, sans-serif; }
+a { text-decoration: none; color: $blue; 
+  &:hover { color: $orange; }
+}
+nav ul { list-style: none; padding: 0; }
+.block { display: block; }
+figure img { display: block; width: 300px; }
+figcapture { display: block; margin-left: 2em; }
+.info-column { width: 33%; }
+.info-column + .info-column {  border-left: 1px solid $lt-orange; margin-left: 10px; padding-left: 10px; }
+.filters { width: 20%; padding: 20px 0 20px 20px; @include blue-gradient;  @include box-sizing(border-box);
+  li + li { margin-top: 10px; }
+  a { height: 100px; color: $blue; @include striped-product(); }
+}
+.products { width: 80%; padding: 20px 50px; @include box-sizing(border-box);
+  .group > .product { width: 45%; }
+}
+
+.wrap { width: 80%; padding-bottom: 30px; }
+.center { margin-left: auto; margin-right: auto; }
+.box { padding: 20px;  @include round-border(5px); @include box-shadow(1px, 1px, 3px, 0, $grey); @include box-sizing(border-box); 
+  &.test { color: #fff; }
+}
+.hbox {  
+  & > .box { width: 33%; 
+    &.test { @include horizontal-gradient($lt-blue, $blue); }
+  } 
+  .box + .box { margin-left: 20px; }
+}
+.vbox {  
+  & > .box { width: 33%; 
+    &.test { @include vertical-gradient($lt-blue, $blue); }
+  } 
+  .box + .box { margin-top: 20px; }
+}
