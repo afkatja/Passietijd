@@ -9,6 +9,8 @@ nav ul { list-style: none; padding: 0; }
 .block { display: block; }
 figure img { display: block; width: 300px; }
 figcapture { display: block; margin-left: 2em; }
+
+textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow: 0px 3px 5px #444; outline: none; }
 .info-column { width: 33%; }
 .info-column + .info-column {  border-left: 1px solid $lt-orange; margin-left: 10px; padding-left: 10px; }
 .filters { width: 20%; padding: 20px 0 20px 20px; @include blue-gradient;  @include box-sizing(border-box);

@@ -51,8 +51,15 @@
 	
 	<section class="slide">
     <h2>Equal rows layout</h2>
-    <textarea name="snippet" id="snippet" cols="30" rows="10" data-subject=".hbox"></textarea>
-    <article class="hbox">
+    <code>.hbox</code>
+    <textarea name="snippet" class="snippet" cols="30" rows="10" data-subject="#example1">
+      display: flex;
+    </textarea>
+    <code>.flex</code>
+    <textarea name="snippet-flex" cols="30" rows="10" class="snippet" data-subject="#example1 .test">
+      flex: 1;
+    </textarea>
+    <article class="hbox" id="example1">
       <section class="flex box test">Box 1</section>
       <section class="flex box test">Box 2</section>
       <section class="flex box test">Box 3</section>
