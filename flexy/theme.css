@@ -106,6 +106,7 @@ strong, b {
 	.slide h2 {
 		font-size: 1.2in;
 		line-height: 1.2;
+		white-space: nowrap;
 	}
 	
 	.slide p,

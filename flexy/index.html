@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Flexbox bedenktijdje</title>
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Comfortaa:400,700,300" rel="stylesheet">
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/modernizr.custom.2.6.2.js"></script>
 	<link href="slideshow.css" rel="stylesheet" />
 	<link href="theme.css" rel="stylesheet" />
 	<link href="talk.css" rel="stylesheet" />
 	<link href="../stylesheets/screen.css" rel="stylesheet" />
 	<script src="prefixfree.min.js"></script>
-	<script src="lib/jquery-1.9.1.min.js"></script>
-	<script src="lib/modernizr.custom.2.6.2.js"></script>
 </head>
 <body data-duration="10">
 
@@ -22,57 +22,75 @@
   		<!--<img src="Q42-logo.png" alt="Q42" />-->
   	</object>
   </header>
-</section>
-<section>
-	<header class="slide">
-		<h1>Introduction</h1>
-	</header>
-	
-	<section class="slide" title="Waarom Flexbox?">
-		<h2>Het probleem</h2>
-		<ul>
-      <li class="delayed plain">
-        <figure class="hbox v-center"><img src="http://i.stack.imgur.com/yTzXI.jpg" /><figcapture>Equal columns layout (of Holy Grail Layout)</figcapture></figure>
-      </li>
-			<li class="delayed plain">
-        <figure class="hbox v-center"><img src="http://kb.richd.nl/wp-content/uploads/2011/11/css-sticky-footer-keep-your-footer-at-the-bottom-of-the-page.jpg" /><figcapture>Sticky footer waar content de verticale ruimte opvult</figcapture></figure>
-      </li>
-			<li class="delayed plain">
-        <figure class="hbox v-center"><img src="http://www.fklein.info/wp-content/uploads/2013/02/square-news-listing.gif" /><figcapture>Verticaal gecentreerde content (met meerdere regels)</figcapture></figure>
-      </li>
-			<li class="delayed plain">
-        <figure class="hbox v-center"><img src="img/input-addon.png" /><figcapture>Fluid inputs met vaste elementen</figcapture></figure>
-      </li>
-			<li class="delayed plain">
-        <figure class="hbox v-center"><img src="http://www.stubbornella.org/content/wp-content/uploads/2010/06/5mediaBlocks.png" /><figcapture>Afbeelding met tekst die netjes naast de tekst blijft staan (media objects)</figcapture></figure>
-      </li>
-		</ul>
-	</section>
-	
 	<section class="slide">
-    <h2>Equal rows layout</h2>
-    <code>.hbox</code>
-    <textarea name="snippet" class="snippet" cols="30" rows="10" data-subject="#example1">
-      display: flex;
-    </textarea>
-    <code>.flex</code>
-    <textarea name="snippet-flex" cols="30" rows="10" class="snippet" data-subject="#example1 .test">
-      flex: 1;
-    </textarea>
-    <article class="hbox" id="example1">
-      <section class="flex box test">Box 1</section>
-      <section class="flex box test">Box 2</section>
-      <section class="flex box test">Box 3</section>
-    </article>
+    <figure class="vbox h-center"><img src="http://i.stack.imgur.com/yTzXI.jpg" /><figcapture>Equal columns layout (of Holy Grail Layout)</figcapture></figure></section>
+	<section class="slide">
+    <figure class="vbox h-center"><img src="http://kb.richd.nl/wp-content/uploads/2011/11/css-sticky-footer-keep-your-footer-at-the-bottom-of-the-page.jpg" /><figcapture>Sticky footer waar content de verticale ruimte opvult</figcapture></figure>
+  </section>
+	<section class="slide">
+		<figure class="vbox h-center"><img src="http://www.fklein.info/wp-content/uploads/2013/02/square-news-listing.gif" /><figcapture>Verticaal gecentreerde content (met meerdere regels)</figcapture></figure>
+	</section>	
+	<section class="slide">
+		<figure class="vbox h-center"><img src="img/input-addon.png" /><figcapture>Fluid inputs met vaste elementen</figcapture></figure></section>
+	<section class="slide">
+    <figure class="vbox h-center"><img src="http://www.stubbornella.org/content/wp-content/uploads/2010/06/5mediaBlocks.png" />
+    	<figcapture>Afbeelding met tekst die netjes naast de tekst blijft staan (media objects)</figcapture></figure>
   </section>
   
   <section class="slide">
-    <h2>Equal columns layout</h2>
-    <article class="vbox">
+  	<h2>Axes</h2>
+  	<p>Main axis</p>
+  	<article class="vbox v-center test full">
+  		<div class="animating hl"></div>
+  	</article>
+	</section>
+	<section class="slide">
+		<p>Cross axis</p>
+  	<article class="hbox h-center test full">
+  		<div class="animating vl"></div>
+  	</article>
+	</section>
+  
+	
+	<section class="slide">
+    <p>Equal rows layout</p>
+    <p>(align along the main axis)</p>
+    <article class="hbox" id="example1">
+      <section class="flex box test sized">Box 1</section>
+      <section class="flex box test">Box 2</section>
+      <section class="flex box test">Box 3</section>
+    </article>
+    <code>.hbox</code>
+    <textarea name="snippet-box" cols="30" rows="2" class="snippet" data-subject="#example1">
+      display: flex; flex-flow: row wrap;
+    </textarea>
+    <code>.flex</code>
+    <textarea name="snippet-flex" cols="30" rows="2" class="snippet" data-subject="#example1 .test">
+      flex: 1;  /* flex-grow flex-shrink flex-basis */
+    </textarea>
+    <code>.sized</code>
+    <textarea name="snippet-sized" id="" cols="30" rows="2" class="snippet" data-subject="#example1 .sized">
+    	width: 50%; box-flex: 1; flex: none;
+    </textarea>
+  </section>
+  
+  <section class="slide">
+    <p>Equal columns layout</p>
+    <p>(align along the cross axis)</p>
+    <article class="vbox" id="example2">
       <section class="flex box test">Box 1</section>
       <section class="flex box test">Box 2</section>
       <section class="flex box test">Box 3</section>
     </article>
+    <code>.vbox</code>
+    <textarea name="snippet-vbox" id="" cols="30" rows="10" class="snippet" data-subject="#example2">
+    	flex-flow: column wrap; box-align: center; align-items: center;
+    </textarea>
+    <code>.flex</code>
+    <textarea name="snippet-vflex" id="" cols="30" rows="10" class="snippet" data-subject="#example2 .test">
+    	flex-order: 1; box-ordinal-group: 3;
+    </textarea>
+    
   </section>
   
   <section class="slide">
@@ -100,24 +118,22 @@
 	<section class="slide">
 		<h2>Browser support</h2>
 		<ul>
-			<li class="delayed">Show, don't tell</li>
-			<li class="delayed">Follow the flow (bijvoorbeeld, timelines, play/pause)</li>
-			<li class="delayed">See the state (wat gebeurt op dat punt)</li>
-			<li class="delayed">Create by reacting</li>
+			<li class="delayed">Chrome (vanaf 28.0)</li>
+			<li class="delayed">Safari (vanaf 5.1 Desktop en 3.2 iOS)</li>
+			<li class="delayed">Firefox (vanaf 23.0)</li>
+			<li class="delayed">IE (vanaf 10)</li>
+			<li class="delayed">Android browser (vanaf 2.1)</li>
 		</ul>
 	</section>
-</section>
 
-<section>	
 	<section class="slide">
 		<h2>Gebruik het nu</h2>
 		<ul>
 		  <li>Modernizr</li>
-		  <li class="delayed">Door immediate connection krijg het publiek veel meer grip op je code</li>
+		  <li class="delayed">.no-flexbox { display: block; }</li>
 		  <li class="delayed">Highlight een stuk code en maak het mogelijk het te wijzigen en meteen de wijzigingen zien</li>
 		  <li class="delayed">Moet als een extentie werken op Dev Tools, meer nadruk op code en wat het doet</li>
 		</ul>
-		<p class="delayed">Klinkt als veel, he?</p>
 	</section>
 	
 	<section class="slide">
@@ -170,16 +186,16 @@
 			<li class="delayed">...</li>
 		</ul>
 	</section>
-	
+
+	<footer class="slide" title="The End">
+		<h2>Credits</h2>
+		<ul>
+			<li>CSS presentation tool van Lea Verou</li>
+			<li>Achtergrond van <a href="http://www.flickr.com/photos/dudutorres/">Dudu Torres</a> op Flickr</li>
+			<li><a href="http://philipwalton.github.io/solved-by-flexbox/">List of problems solved by Flexbox</a> door Philip Walton</li>
+		</ul>
+	</footer>
 </section>
-<footer class="slide" title="The End">
-	<h2>Credits</h2>
-	<ul>
-		<li>CSS presentation tool van Lea Verou</li>
-		<li>Achtergrond van <a href="http://www.flickr.com/photos/dudutorres/">Dudu Torres</a> op Flickr</li>
-		<li><a href="http://philipwalton.github.io/solved-by-flexbox/">List of problems solved by Flexbox</a> door Philip Walton</li>
-	</ul>
-</footer>
 
 <script src="slideshow.js"></script>
 <script src="plugins/css-edit.js"></script>

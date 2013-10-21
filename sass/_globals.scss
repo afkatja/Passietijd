@@ -95,13 +95,28 @@ $font-base: 13px;
   @include experimental-value(display, flex, -moz, -webkit, -o, -ms, not -khtml, official); /*new syntax*/
   /*@include experimental(box-orient, $direction);*/
   /*support for new syntax*/
-  @if($direction == 'vertical') { @include experimental(flex-flow, column nowrap); }
-  @else if($direction == 'horizontal') { @include experimental(flex-flow, row nowrap); }
+  @if($direction == 'vertical') { @include experimental(flex-flow, column); }
+  @else if($direction == 'horizontal') { @include experimental(flex-flow, row); }
   /*@include experimental(box-align, stretch);
   @include experimental(box-pack, start);*/ /*old syntax*/
-  @include experimental(align-content, stretch);
-  @include experimental(justify-content, flex-start); /*new syntax*/
+  //	@include experimental(align-content, stretch);
+  //@include experimental(justify-content, flex-start); /*new syntax*/
 }
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+            #{$property}:$value;
+}
+
+@mixin vendor-value($property, $value){
+  #{$property}:-webkit-#{$value};
+     #{$property}:-moz-#{$value};
+      #{$property}:-ms-#{$value};
+          #{$property}:#{$value};
+}
+
 @mixin flex($ratio) {   
   @include experimental(flex, $ratio); /*new syntax*/
   /*@include experimental(box-align, stretch);

@@ -99,34 +99,34 @@ p { font-size: 13px; margin: .5em 0; }
 
 /* line 21, ../sass/buttons.scss */
 a.button, a.button-blue, a.button-white, a.button-red, a.button-grey, a.button-orange, a[class*=button], a[class*=button]:active, a[class*=button]:visited, a.button-blue-big, a.button-white-big, a.button-red-big, a.button-grey-big, a.button-orange-small, a.twitter, a.facebook { display: inline; float: left; display: block; margin: 0.7em 0.5em 0.7em 0; border-width: 1px; border-style: solid; font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size: 100%; line-height: 130%; font-weight: bold; text-decoration: none; cursor: pointer; padding: 5px 10px 5px 7px; }
-/* line 75, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 75, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 a.button img, a.button-blue img, a.button-white img, a.button-red img, a.button-grey img, a.button-orange img, a[class*=button] img, a[class*=button]:active img, a[class*=button]:visited img, a.button-blue-big img, a.button-white-big img, a.button-red-big img, a.button-grey-big img, a.button-orange-small img, a.twitter img, a.facebook img { margin: 0 3px -3px 0 !important; padding: 0; border: none; width: 16px; height: 16px; float: none; }
 
 /* line 33, ../sass/buttons.scss */
 button { display: inline; float: left; display: block; margin: 0.7em 0.5em 0.7em 0; border-width: 1px; border-style: solid; font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size: 100%; line-height: 130%; font-weight: bold; text-decoration: none; cursor: pointer; width: auto; overflow: visible; padding: 4px 10px 3px 7px; background-color: whitesmoke; border-color: #eeeeee #dedede #dedede #eeeeee; color: #565656; }
-/* line 75, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 75, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button img { margin: 0 3px -3px 0 !important; padding: 0; border: none; width: 16px; height: 16px; float: none; }
-/* line 95, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 95, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button[type] { padding: 4px 10px 4px 7px; line-height: 17px; }
-/* line 98, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 98, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 *:first-child + html button[type] { padding: 4px 10px 3px 7px; }
-/* line 62, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 62, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button:hover { background-color: #dff4ff; border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff; color: #336699; }
-/* line 47, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 47, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button:active { background-color: #6299c5; border-color: #72a9d5 #6299c5 #6299c5 #72a9d5; color: white; }
 
 /* line 42, ../sass/buttons.scss */
 a.positive, button.positive { color: #529214; }
-/* line 62, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 62, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 a.positive:hover, button.positive:hover { background-color: #e6efc2; border-color: #d6e890 #c6d880 #c6d880 #d6e890; color: #529214; }
-/* line 47, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 47, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 a.positive:active, button.positive:active { background-color: #529214; border-color: #62a224 #529214 #529214 #62a224; color: white; }
 
 /* line 48, ../sass/buttons.scss */
 a.negative, button.negative { color: #d12f19; }
-/* line 62, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 62, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 a.negative:hover, button.negative:hover { background-color: #fbe3e4; border-color: #ffd2d4 #fbc2c4 #fbc2c4 #ffd2d4; color: #d12f19; }
-/* line 47, ../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 47, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 a.negative:active, button.negative:active { background-color: #d12f19; border-color: #e13f29 #d12f19 #d12f19 #e13f29; color: white; }
 
 /* ============== common buttons ============ */
@@ -145,13 +145,13 @@ a.negative:active, button.negative:active { background-color: #d12f19; border-co
 .button-blue.icon-play, .button-white.icon-play, .button-red.icon-play, .button-grey.icon-play, .button-orange.icon-play { padding-right: 34px; }
 /* line 82, ../sass/buttons.scss */
 .button-blue.icon-play:after, .button-white.icon-play:after, .button-red.icon-play:after, .button-grey.icon-play:after, .button-orange.icon-play:after { height: 16px; width: 16px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2262px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-blue.icon-play:after, .button-white.icon-play:after, .button-red.icon-play:after, .button-grey.icon-play:after, .button-orange.icon-play:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1131px; background-size: 480px auto; } }
 /* line 84, ../sass/buttons.scss */
 .button-blue.icon-add, .button-white.icon-add, .button-red.icon-add, .button-grey.icon-add, .button-orange.icon-add { padding-right: 34px; }
 /* line 86, ../sass/buttons.scss */
 .button-blue.icon-add:after, .button-white.icon-add:after, .button-red.icon-add:after, .button-grey.icon-add:after, .button-orange.icon-add:after { width: 17px; height: 16px; width: 17px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2149px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-blue.icon-add:after, .button-white.icon-add:after, .button-red.icon-add:after, .button-grey.icon-add:after, .button-orange.icon-add:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1074.5px; background-size: 480px auto; } }
 /* line 88, ../sass/buttons.scss */
 .button-blue.disabled, .button-white.disabled, .button-red.disabled, .button-grey.disabled, .button-orange.disabled { opacity: .5; }
@@ -167,7 +167,7 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 
 /* line 107, ../sass/buttons.scss */
 .button-blue.icon-play:after { height: 16px; width: 16px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1963px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-blue.icon-play:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -981.5px; background-size: 480px auto; } }
 
 /* line 114, ../sass/buttons.scss */
@@ -178,7 +178,7 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 .button-blue-big.icon-play, .button-white-big.icon-play, .button-red-big.icon-play, .button-grey-big.icon-play { padding: 0 40px 0 12px; }
 /* line 126, ../sass/buttons.scss */
 .button-blue-big.icon-play:after, .button-white-big.icon-play:after, .button-red-big.icon-play:after, .button-grey-big.icon-play:after { height: 21px; width: 21px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1905px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-blue-big.icon-play:after, .button-white-big.icon-play:after, .button-red-big.icon-play:after, .button-grey-big.icon-play:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -952.5px; background-size: 480px auto; } }
 /* line 128, ../sass/buttons.scss */
 .button-blue-big.disabled, .button-white-big.disabled, .button-red-big.disabled, .button-grey-big.disabled { opacity: .5; }
@@ -227,7 +227,7 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 .button-grey-big.icon-back { padding: 0 12px 0 40px; /* back icon is always on the left */ }
 /* line 180, ../sass/buttons.scss */
 .button-grey-big.icon-back:after { right: auto; left: 6px; /* back icon is always on the left */ height: 21px; width: 21px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2349px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-grey-big.icon-back:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1174.5px; background-size: 480px auto; } }
 
 /* line 185, ../sass/buttons.scss */
@@ -248,15 +248,15 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 .button-orange-small:hover, .button-orange-small:focus { background-color: #ff9f00; /*Old browsers*/ /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76500', endColorstr='#ff9f00',GradientType=0 ); /* IE6-9 *!/*/ background: -moz-linear-gradient(top, #f76500 0%, #ff9f00 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f76500), color-stop(100%, #ff9f00)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #f76500 0%, #ff9f00 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #f76500 0%, #ff9f00 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #f76500 0%, #ff9f00 100%); /* IE10+ */ background: linear-gradient(to bottom, #f76500 0%, #ff9f00 100%); /* W3C */ }
 /* line 207, ../sass/buttons.scss */
 .button-orange-small.icon-remove:after { height: 21px; width: 21px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2632px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-orange-small.icon-remove:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1316px; background-size: 480px auto; } }
 /* line 210, ../sass/buttons.scss */
 .button-orange-small.icon-add:after { height: 21px; width: 21px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2611px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-orange-small.icon-add:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1305.5px; background-size: 480px auto; } }
 /* line 213, ../sass/buttons.scss */
 .button-orange-small.icon-delete:after { height: 21px; width: 21px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2590px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .button-orange-small.icon-delete:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1295px; background-size: 480px auto; } }
 
 /* line 218, ../sass/buttons.scss */
@@ -268,7 +268,7 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 .twitter { background-color: #2b9acc; /*Old browsers*/ /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31aae1', endColorstr='#2b9acc',GradientType=0 ); /* IE6-9 *!/*/ background: -moz-linear-gradient(top, #31aae1 0%, #2b9acc 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31aae1), color-stop(100%, #2b9acc)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #31aae1 0%, #2b9acc 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #31aae1 0%, #2b9acc 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #31aae1 0%, #2b9acc 100%); /* IE10+ */ background: linear-gradient(to bottom, #31aae1 0%, #2b9acc 100%); /* W3C */ border: 1px solid #2B9ACC; }
 /* line 224, ../sass/buttons.scss */
 .twitter:after { position: absolute; top: 0; left: 0; content: ''; display: inline-block; height: 30px; width: 30px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1529px; background-repeat: no-repeat; background-size: 960px auto; width: 16px; height: 16px; margin-top: 5px; margin-left: 7px; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .twitter:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -764.5px; background-size: 480px auto; } }
 /* line 225, ../sass/buttons.scss */
 .twitter:hover, .twitter:focus, .twitter:active { background-color: #31aae1; /*Old browsers*/ /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b9acc', endColorstr='#31aae1',GradientType=0 ); /* IE6-9 *!/*/ background: -moz-linear-gradient(top, #2b9acc 0%, #31aae1 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b9acc), color-stop(100%, #31aae1)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #2b9acc 0%, #31aae1 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #2b9acc 0%, #31aae1 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #2b9acc 0%, #31aae1 100%); /* IE10+ */ background: linear-gradient(to bottom, #2b9acc 0%, #31aae1 100%); /* W3C */ }
@@ -277,7 +277,7 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
 .facebook { background-color: #314c81; /*Old browsers*/ /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#768db8', endColorstr='#314c81',GradientType=0 ); /* IE6-9 *!/*/ background: -moz-linear-gradient(top, #768db8 0%, #314c81 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #768db8), color-stop(100%, #314c81)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #768db8 0%, #314c81 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #768db8 0%, #314c81 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #768db8 0%, #314c81 100%); /* IE10+ */ background: linear-gradient(to bottom, #768db8 0%, #314c81 100%); /* W3C */ border: 1px solid #2B4473; position: relative; }
 /* line 228, ../sass/buttons.scss */
 .facebook span { position: absolute; right: 5px; top: 3px; height: 30px; width: 30px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1471px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .facebook span { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -735.5px; background-size: 480px auto; } }
 /* line 229, ../sass/buttons.scss */
 .facebook:hover, .facebook:focus, .facebook:active { background-color: #768db8; /*Old browsers*/ /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#314c81', endColorstr='#768db8',GradientType=0 ); /* IE6-9 *!/*/ background: -moz-linear-gradient(top, #314c81 0%, #768db8 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #314c81), color-stop(100%, #768db8)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #314c81 0%, #768db8 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #314c81 0%, #768db8 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #314c81 0%, #768db8 100%); /* IE10+ */ background: linear-gradient(to bottom, #314c81 0%, #768db8 100%); /* W3C */ }
@@ -285,24 +285,24 @@ a[class*=button], a[class*=button]:active, a[class*=button]:visited, input[class
   .facebook span { display: none; }
   /* line 233, ../sass/buttons.scss */
   .facebook:hover, .facebook:focus, .facebook:active { height: 30px; width: 30px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1471px; background-repeat: no-repeat; background-size: 960px auto; background-color: transparent; opacity: 1; } }
-@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 480px) and (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 480px) and (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .facebook:hover, .facebook:focus, .facebook:active { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -735.5px; background-size: 480px auto; } }
 
 /* line 236, ../sass/buttons.scss */
 #basketcount { position: relative; height: 40px; padding: 10px 0 0 20px; }
 /* line 237, ../sass/buttons.scss */
 #basketcount:after { content: ''; position: absolute; top: 0; right: 5px; width: 40px; height: 40px; height: 28px; width: 39px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1501px; background-repeat: no-repeat; background-size: 960px auto; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   #basketcount:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -750.5px; background-size: 480px auto; } }
 
 /*i-tjes*/
 /* line 240, ../sass/buttons.scss */
 span.i { position: relative; display: block; float: right; width: 16px; height: 16px; height: 32px; width: 32px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1810px; background-repeat: no-repeat; background-size: 960px auto; font-size: 0; line-height: 26px; color: transparent; margin: 7px 4px 0 0; z-index: 10; }
-/* line 405, ../sass/_globals.scss */
+/* line 420, ../sass/_globals.scss */
 span.i:hover { background-position: 0 -1778px; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   span.i { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -905px; background-size: 480px auto; }
-  /* line 432, ../sass/_globals.scss */
+  /* line 447, ../sass/_globals.scss */
   span.i:hover { background-position: 0 -889px; } }
 @media screen and (max-width: 480px) { /* line 240, ../sass/buttons.scss */
   span.i { margin-right: 0; } }
@@ -319,7 +319,7 @@ span.i:hover, span.i:focus { cursor: pointer; }
 .ie8 .i-box.show, .ie7 .i-box.show { display: inline; }
 /* line 275, ../sass/buttons.scss */
 .i-box:after { content: ''; display: block; font-size: 0; line-height: 0; position: absolute; width: 19px; height: 12px; height: 12px; width: 19px; background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -2492px; background-repeat: no-repeat; background-size: 960px auto; bottom: -12px; right: 20px; }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 421, ../sass/_globals.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) { /* line 436, ../sass/_globals.scss */
   .i-box:after { background-image: url('/images/spritable-sb6b402a0c6.png'); background-position: 0 -1246px; background-size: 480px auto; } }
 
 @media screen and (max-width: 480px) { /* line 284, ../sass/buttons.scss */

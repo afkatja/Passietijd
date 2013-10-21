@@ -7,10 +7,15 @@ a { text-decoration: none; color: $blue;
 }
 nav ul { list-style: none; padding: 0; }
 .block { display: block; }
-figure img { display: block; width: 300px; }
-figcapture { display: block; margin-left: 2em; }
+figure img { width: 100%; }
+figcapture { display: block; }
+textarea {	max-height: 140px; }
 
 textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow: 0px 3px 5px #444; outline: none; }
+
+.hl {	height: 10px; background: #fff; }
+.vl {	width: 10px; background: #fff; }
+
 .info-column { width: 33%; }
 .info-column + .info-column {  border-left: 1px solid $lt-orange; margin-left: 10px; padding-left: 10px; }
 .filters { width: 20%; padding: 20px 0 20px 20px; @include blue-gradient;  @include box-sizing(border-box);
@@ -21,20 +26,23 @@ textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow:
   .group > .product { width: 45%; }
 }
 
+.full {	height: 80%; }
+
 .wrap { width: 80%; padding-bottom: 30px; }
 .center { margin-left: auto; margin-right: auto; }
+
 .box { padding: 20px;  @include round-border(5px); @include box-shadow(1px, 1px, 3px, 0, $grey); @include box-sizing(border-box); 
   &.test { color: #fff; }
 }
+.test { @include horizontal-gradient($lt-blue, $blue); }
+
 .hbox {  
-  & > .box { width: 33%; 
-    &.test { @include horizontal-gradient($lt-blue, $blue); }
+  & > .box { //width: 33%; 
   } 
   .box + .box { margin-left: 20px; }
 }
 .vbox {  
-  & > .box { width: 33%; 
-    &.test { @include vertical-gradient($lt-blue, $blue); }
+  & > .box { //width: 33%; 
   } 
   .box + .box { margin-top: 20px; }
 }

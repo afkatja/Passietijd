@@ -49,3 +49,15 @@ a[rel=author] { text-align: right; display: block; }
 		background-size: contain;
 	}*/
 }
+
+.animating.hl { animation: grow-horizontal 2s 3s forwards; }
+.animating.vl {	animation: grow-vertical 2s 3s forwards; }
+@keyframes 'grow-horizontal' {
+	0% { width: 0; }
+	100% { width: 100%; }
+}
+
+@keyframes 'grow-vertical' {
+	0% { height: 0; }
+	100% { height: 100%; }
+}

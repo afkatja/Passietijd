@@ -1,7 +1,7 @@
 @import "globals";
-.hbox { @include flexbox(horizontal); }
-.vbox { @include flexbox(vertical); }
-.flex { @include flex(1); }
+.hbox { @include vendor-value(display, flex); }
+.vbox { @include vendor-value(display, flex); @include vendor(box-orient, vertical); }
+.flex { @include vendor(flex, 1); }
 
 .v-center { box-align: center; align-items: center; }
-.h-center {  }
+.h-center { box-pack: center; justify-content: center; text-align: center; }
