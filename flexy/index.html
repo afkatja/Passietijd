@@ -54,7 +54,7 @@
 	
 	<section class="slide">
     <p>Equal rows layout</p>
-    <p>(align along the main axis)</p>
+    <p>(align along the horizontal axis)</p>
     <article class="hbox" id="example1">
       <section class="flex box test sized">Box 1</section>
       <section class="flex box test">Box 2</section>
@@ -68,15 +68,17 @@
     <textarea name="snippet-flex" cols="30" rows="2" class="snippet" data-subject="#example1 .test">
       flex: 1;  /* flex-grow flex-shrink flex-basis */
     </textarea>
+    <p class="presenter-notes">(1: take 1 amount of the available space which is split evenly between items; declared width is ignored)</p>
     <code>.sized</code>
     <textarea name="snippet-sized" id="" cols="30" rows="2" class="snippet" data-subject="#example1 .sized">
     	width: 50%; box-flex: 1; flex: none;
     </textarea>
+    <p class="presenter-notes">Split available space proportionally; think of parts to make coctails</p>
   </section>
   
   <section class="slide">
     <p>Equal columns layout</p>
-    <p>(align along the cross axis)</p>
+    <p>(align along the vertical axis)</p>
     <article class="vbox" id="example2">
       <section class="flex box test">Box 1</section>
       <section class="flex box test">Box 2</section>
@@ -90,13 +92,35 @@
     <textarea name="snippet-vflex" id="" cols="30" rows="10" class="snippet" data-subject="#example2 .test">
     	flex-order: 1; box-ordinal-group: 3;
     </textarea>
-    
   </section>
   
   <section class="slide">
-    <h2>Real life example test</h2>
-    <div class="hbox">
-      <nav class="filters">
+  	<p>Sticky footer layout</p>
+  	<p>Alignment</p>
+  	<div class="sticky-container outlined box" id="example3">
+	  	<article class="flex">
+		  	<code style="display: inline-block;">.sticky-container</code>
+		  	<textarea name="sticky-footer-container" id="" cols="30" rows="10" class="snippet" data-subject="#example3">
+		  		display: flex; flex-direction: column; min-height: 80vh;
+		  	</textarea>
+		  	<p class="presenter-notes">1 vh / vw unit reflects 1/100th the height/width of the viewport; supported even by IE9</p>
+		  	<code style="display: inline-block;">.sticky-footer</code>
+		  	<textarea name="sticky-footer" id="" cols="30" rows="10" class="snippet" data-subject=".sticky-footer">
+		  		display: flex; margin: auto; width: 100%;
+		  	</textarea>
+	  	</article>
+			<footer class="sticky-footer">
+				<section class="flex box test">Box 1</section>
+				<section class="flex box test">Box 2</section>
+				<section class="flex box test">Box 3</section>
+			</footer>
+		</div>
+  </section>
+  
+  <section class="slide">
+    <p>Real life example test</p>
+    <div class="vbox sticky-container">
+      <nav class="filters small-text">
         <ul>
           <li><a href="#" class="block box">Test link 1</a></li>
           <li><a href="#" class="block box">Test link 2</a></li>
@@ -104,95 +128,53 @@
           <li><a href="#" class="block box">Test link 4</a></li>
         </ul>
       </nav>
-      <section class="products">
-        <div class="group hbox">
-          <div class="product box">Product 1</div>
-          <div class="product box">Product 2</div>
-          <div class="product box">Product 3</div>
-          <div class="product box">Product 4</div>
-        </div>
+      <section class="hbox small-text products">
+	      <div class="flex box">Product 1</div>
+	      <div class="flex box">Product 2</div>
+	      <div class="flex box">Product 3</div>
+	      <div class="flex box">Product 4</div>
+	      <div class="flex box">Product 5</div>
+	      <div class="flex box">Product 6</div>
+	      <div class="flex box">Product 7</div>
+	      <div class="flex box">Product 8</div>
       </section>
     </div>
+    <footer class="sticky-footer">
+	    <a href="#" class="flex box test">Footer link 1</a>
+	    <a href="#" class="flex box test">Footer link 2</a>
+	    <a href="#" class="flex box test">Footer link 3</a>
+    </footer>
 	</section>
 	
 	<section class="slide">
 		<h2>Browser support</h2>
 		<ul>
-			<li class="delayed">Chrome (vanaf 28.0)</li>
-			<li class="delayed">Safari (vanaf 5.1 Desktop en 3.2 iOS)</li>
-			<li class="delayed">Firefox (vanaf 23.0)</li>
-			<li class="delayed">IE (vanaf 10)</li>
-			<li class="delayed">Android browser (vanaf 2.1)</li>
+			<li class="delayed"><img src="https://github.com/paulirish/browser-logos/blob/master/chrome/chrome_48x48.png?raw=true" />Chrome (vanaf 28.0)</li>
+			<li class="delayed"><img src="https://github.com/paulirish/browser-logos/blob/master/safari/safari_48x48.png?raw=true" /><img src="https://github.com/paulirish/browser-logos/blob/master/safari-ios-6/safari-ios-6_48x48.png?raw=true" />Safari (vanaf 5.1 Desktop en 3.2 iOS)</li>
+			<li class="delayed"><img src="https://github.com/paulirish/browser-logos/blob/master/firefox/firefox_48x48.png?raw=true" />Firefox (vanaf 23.0)</li>
+			<li class="delayed"><img src="https://github.com/paulirish/browser-logos/blob/master/ie10/ie10_48x48.png?raw=true" />IE (vanaf 10)</li>
+			<li class="delayed"><img src="https://cdn1.iconfinder.com/data/icons/Android-R2-png/512/Browser-Android-R.png" width="48px" />Android browser (vanaf 2.1)</li>
 		</ul>
 	</section>
 
 	<section class="slide">
 		<h2>Gebruik het nu</h2>
 		<ul>
-		  <li>Modernizr</li>
-		  <li class="delayed">.no-flexbox { display: block; }</li>
-		  <li class="delayed">Highlight een stuk code en maak het mogelijk het te wijzigen en meteen de wijzigingen zien</li>
-		  <li class="delayed">Moet als een extentie werken op Dev Tools, meer nadruk op code en wat het doet</li>
+		  <li><img src="http://modernizr.com/i/img/logo-x12.png" />Modernizr</li>
+		  <li><code>.no-flexbox .flex-container { display: block; /* clearfix stuff goes here */ }</code></li>
+		  <li><code>.no-flexbox .flex-item { float: left; }</code></li>
+		  <li>Met SASS nest alle flexbox code onder <code>.flexbox</code>. <br />Je gaat toch meer css schrijven voor IE9--...</li>
 		</ul>
 	</section>
 	
-	<section class="slide">
-		<h2>Ja, maar</h2>
-		<ul>
-			<li>Code Pen en andere omgevingen (eg <a href="http://livecoding.io/">live coding io</a>) bestaan al!</li>
-			<li class="delayed">Je zou zo veel opnieuw moeten opzetten!</li>
-			<li class="delayed">Je kan geen backend code instantaan laten zien!</li>
-			<li class="delayed">...</li>
-		</ul>
-		<p class="delayed">Nou, waarom gebruiken we die bestaande tools niet voor bedenktijdjes?</p> 
-		<p class="delayed">Het idee is een laag bovenop te creeren, net als Dev Tools, zodat we geen nieuwe opzet hoeven te maken</p>
-	</section>
-	
-	<section class="slide">
-		<h2>Scope</h2>
-		<ul>
-		  <li>Een prototype voor het testen van een feature</li>
-		  <li class="delayed">Bijvoorbeeld css3 animations en transitions</li>
-		  <li class="delayed">Niet voor backend, nee</li>
-		  <li class="delayed">Omdat het debuggen van css3 animations in dev tools onmogelijk is</li>
-		  <li class="delayed">Het liefst geintegreerd met dev tools (nader onderzoek nodig)</li>
-		</ul>
-	</section>
-	
-	<section class="slide">
-	  <h2>Haalbaar?</h2>
-	  <ul>
-	    <li>Javascript opzet van editing omgeving</li>
-	    <li>Keuze voor platform</li>
-	    <li>Het wordt een prototype!</li>
-	    <li>We gaan (nog) niet integreren met Dev Tools</li>
-	  </ul>
-	</section>
-	
-	<section class="slide">
-	  <h2>Vet?</h2>
-	  <ul>
-	    <li>Niet alleen voor bedenktijdjes, maar ook voor product demo's!</li>
-	    <li>Een eigen Q product</li>
-	  </ul>
-	</section>
-	
-	<section class="slide">
-		<h2>De toekomst</h2>
-		<ul>
-			<li>Een Chrome Extension</li>
-			<li class="delayed">Mogelijk bestaande code (binnen een bestaand project) te testen</li>
-			<li class="delayed">Integreren met source maps voor het eventueel opslaan van de wijzigingen</li>
-			<li class="delayed">...</li>
-		</ul>
-	</section>
-
 	<footer class="slide" title="The End">
 		<h2>Credits</h2>
 		<ul>
-			<li>CSS presentation tool van Lea Verou</li>
-			<li>Achtergrond van <a href="http://www.flickr.com/photos/dudutorres/">Dudu Torres</a> op Flickr</li>
+			<li><a rel="https://github.com/LeaVerou/csss">CSS presentation tool</a> van Lea Verou</li>
+			<li>Check <a href="http://vimeo.com/69531447">de presentatie</a> van Stephen Hay, The Felxbox King</li>
 			<li><a href="http://philipwalton.github.io/solved-by-flexbox/">List of problems solved by Flexbox</a> door Philip Walton</li>
+			<li><a href="http://www.sketchingwithcss.com/samplechapter/cheatsheet.html">Flexbox cheatsheat</a></li>
+			<li>Achtergrond van <a href="http://www.flickr.com/photos/dudutorres/">Dudu Torres</a> op Flickr</li>
 		</ul>
 	</footer>
 </section>

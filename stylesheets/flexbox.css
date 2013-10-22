@@ -21,3 +21,9 @@
 
 /* line 7, ../sass/flexbox.scss */
 .h-center { box-pack: center; justify-content: center; text-align: center; }
+
+/* line 9, ../sass/flexbox.scss */
+.sticky-container { min-height: 80vh; }
+
+/* line 10, ../sass/flexbox.scss */
+.sticky-footer { display: flex; margin: auto; width: 100%; }

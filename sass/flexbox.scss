@@ -5,3 +5,6 @@
 
 .v-center { box-align: center; align-items: center; }
 .h-center { box-pack: center; justify-content: center; text-align: center; }
+
+.sticky-container {	min-height: 80vh; }
+.sticky-footer {display: flex; margin: auto; width: 100%; }

@@ -22,7 +22,10 @@ textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow:
   li + li { margin-top: 10px; }
   a { height: 100px; color: $blue; @include striped-product(); }
 }
-.products { width: 80%; padding: 20px 50px; @include box-sizing(border-box);
+.products { width: 80%; padding: 20px 50px; @include box-sizing(border-box); flex-flow: row wrap; box-align: start; align-items: flex-start;
+	.flex { flex: none; width: 45%; background: #ececec; color: $orange; 
+		&:first-child { margin-left: 20px; }
+	}
   .group > .product { width: 45%; }
 }
 
@@ -35,6 +38,7 @@ textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow:
   &.test { color: #fff; }
 }
 .test { @include horizontal-gradient($lt-blue, $blue); }
+.outlined {	box-shadow: 0px 3px 5px rgba(255,255,255,.5) inset; }
 
 .hbox {  
   & > .box { //width: 33%; 
@@ -44,5 +48,7 @@ textarea { background: rgba(183, 176, 196, 0.4); border-radius: 5px; box-shadow:
 .vbox {  
   & > .box { //width: 33%; 
   } 
-  .box + .box { margin-top: 20px; }
+  //.box + .box { margin-top: 20px; }
 }
+
+//.small-text * {	font-size: 1rem; }
